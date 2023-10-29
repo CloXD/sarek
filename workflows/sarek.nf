@@ -54,7 +54,7 @@ def checkPathParamList = [
     params.spliceai_indel_tbi,
     params.spliceai_snv,
     params.spliceai_snv_tbi,
-    params.alpha_missense_db
+    params.alpha_missense_db,
     params.alpha_missense_db_tbi
 ]
 
