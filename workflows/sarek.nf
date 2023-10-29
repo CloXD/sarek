@@ -53,7 +53,9 @@ def checkPathParamList = [
     params.spliceai_indel,
     params.spliceai_indel_tbi,
     params.spliceai_snv,
-    params.spliceai_snv_tbi
+    params.spliceai_snv_tbi,
+    params.alpha_missense_db
+    params.alpha_missense_db_tbi
 ]
 
 // only check if we are using the tools
@@ -378,6 +380,10 @@ if (params.spliceai_snv && params.spliceai_snv_tbi && params.spliceai_indel && p
     vep_extra_files.add(file(params.spliceai_indel_tbi, checkIfExists: true))
     vep_extra_files.add(file(params.spliceai_snv, checkIfExists: true))
     vep_extra_files.add(file(params.spliceai_snv_tbi, checkIfExists: true))
+}
+if ( params.alpha_missense_db && params.alpha_missense_db_tbi ) {
+    vep_extra_files.add(file(params.alpha_missense_db, checkIfExists: true))
+    vep_extra_files.add(file(params.alpha_missense_db_tbi, checkIfExists: true))
 }
 
 /*
