@@ -500,6 +500,27 @@
                     "help_text": "To be used with `--vep_spliceai`.",
                     "hidden": true
                 },
+                "vep_alpha_missense" :{
+                    "type": "boolean",
+                    "fa_icon": "fas fa-database",
+                    "description": "Enable the use of the VEP AlphaMissense plugin.",
+                    "hidden": true,
+                    "help_text": "For details, see [here](https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html#AlphaMissense)."
+                },
+                "alpha_missense_db": {
+                    "type": "string",
+                    "fa_icon": "fas fa-file",
+                    "description": "Path to AlphaMissense data file.",
+                    "help_text": "To be used with `--vep_alpha_missense`.",
+                    "hidden": true
+                },
+                "alpha_missense_db_tbi": {
+                    "type": "string",
+                    "fa_icon": "fas fa-file",
+                    "description": "Path to AlphaMissense data tabix indexed file.",
+                    "help_text": "To be used with `--vep_alpha_missense`.",
+                    "hidden": true
+                },
                 "vep_spliceregion": {
                     "type": "boolean",
                     "fa_icon": "fas fa-database",

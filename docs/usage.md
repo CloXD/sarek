@@ -1048,6 +1048,15 @@ Enable with `--vep_spliceregion`.
 
 For more details, see [here](https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html#spliceregion) and [here](https://www.ensembl.info/2018/10/26/cool-stuff-the-vep-can-do-splice-site-variant-annotation/)."
 
+#### AlphaMissense
+
+Enable with `--vep_alpha_missense`. The following parameters are mandatory:
+- `--alpha_missense_db`, to specify the path to AlphaMissense data file.
+- `--alpha_missense_db_tbi`, to specify the path to AlphaMissense data tabix indexed file.
+
+For more details, see [here](https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html#alphamissense) and [here](https://www.science.org/doi/10.1126/science.adg7492).
+
+
 ## MultiQC related issues
 
 ### Plots for SnpEff are missing
